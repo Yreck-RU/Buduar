@@ -98,6 +98,84 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-forward:before {
+  content: "\e903"; }
+
+.icon-smiley:before {
+  content: "\e904"; }
+
+.icon-star:before {
+  content: "\e905"; }
+
+.icon-dollor:before {
+  content: "\e906"; }
+
+.icon-cloud:before {
+  content: "\e907"; }
+
+.icon-pointer-right:before {
+  content: "\e909"; }
+
+.icon-pointer-left:before {
+  content: "\e90a"; }
+
+.icon-reboot:before {
+  content: "\e90b"; }
+
+.icon-tag:before {
+  content: "\e90c"; }
+
+.icon-magnifying-glass:before {
+  content: "\e90d"; }
+
+.icon-dots:before {
+  content: "\e90e"; }
+
+.icon-arrows:before {
+  content: "\e90f"; }
+
+.icon-pointer:before {
+  content: "\e910"; }
+
+.icon-pencil:before {
+  content: "\e911"; }
+
+.icon-funnel:before {
+  content: "\e912"; }
+
+.icon-youtube:before {
+  content: "\e913"; }
+
+.icon-camera:before {
+  content: "\e914"; }
+
+.icon-compass:before {
+  content: "\e915"; }
+
+.icon-referrals:before {
+  content: "\e916"; }
+
+.icon-belet:before {
+  content: "\e917"; }
+
+.icon-people:before {
+  content: "\e918"; }
+
+.icon-heart:before {
+  content: "\e919"; }
+
+.icon-schedule:before {
+  content: "\e91a"; }
+
+.icon-img:before {
+  content: "\e91b"; }
+
+.icon-messages:before {
+  content: "\e91c"; }
+
+.icon-house:before {
+  content: "\e91d"; }
+
 .icon-insta:before {
   content: "\e900"; }
 
@@ -122,6 +200,10 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+
+@media (max-width: 1024px) {
+  body {
+    display: none; } }
 
 .index-block {
   background-image: url("../img/Index-block/fon.png");
@@ -1311,3 +1393,379 @@ input[type="radio"]:checked + label:after {
     .footer-social-network__item {
       margin-left: 0;
       margin-right: 25px; } }
+
+.buduar-home {
+  background: #fafcff;
+  overflow: hidden; }
+
+.buduar-home__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.buduar-home-panel {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 17%;
+  flex: 0 0 17%;
+  background: #fff;
+  padding: 40px 0;
+  position: relative; }
+  .buduar-home-panel:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 70vw;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%); }
+
+.buduar-home-panel__item {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 20px 12px;
+  border-radius: 15px 0 0 15px;
+  position: relative; }
+  .buduar-home-panel__item._active {
+    background: #EDF1F8; }
+  .buduar-home-panel__item._active .buduar-home-panel__icon {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.01%, #703FEC), color-stop(100.01%, #00B9E4));
+    background: -webkit-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
+    background: -o-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
+    background: linear-gradient(90deg, #703FEC 0.01%, #00B9E4 100.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .buduar-home-panel__item._active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.01%, #703FEC), color-stop(100.01%, #00B9E4));
+    background: -webkit-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
+    background: -o-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
+    background: linear-gradient(90deg, #703FEC 0.01%, #00B9E4 100.01%); }
+
+.buduar-home-panel__icon {
+  font-size: 17px;
+  color: #B0B2BB;
+  margin-right: 6px; }
+
+.buduar-home-panel__text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #50535B;
+  padding-top: 2px; }
+
+.buduar-home-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 40px 30px; }
+
+.buduar-home-new-post {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.04);
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-new-post__text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b0b2bb; }
+
+.buduar-home-new-post__icons {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-new-post__icon {
+  font-size: 18px;
+  margin-left: 8px;
+  color: #b0b2bb; }
+
+.buduar-home-bread-crumbs {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 17px; }
+
+.buduar-home-bread-crumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-bread-crumbs__link {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #50535b;
+  height: 24px;
+  padding: 0 8px;
+  margin-right: 7px;
+  border-radius: 12px;
+  background: #edf1f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-bread-crumbs__link_icon {
+  height: 24px;
+  width: 24px;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-bread-crumbs__funnel {
+  font-size: 20px;
+  color: #b0b2bb; }
+
+.buduar-home-block {
+  background: white;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 25px; }
+
+.buduar-home-block-header {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 14px; }
+
+.buduar-home-block-header__wrapper {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-block-header__logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: #edf1f8; }
+
+.buduar-home-block-header__title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #22252b; }
+
+.buduar-home-block-header__bread-crumbs {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .buduar-home-block-header__bread-crumbs > * {
+    margin-right: 16px;
+    position: relative; }
+  .buduar-home-block-header__bread-crumbs > *:before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #566d95;
+    border-radius: 50%;
+    position: absolute;
+    right: -9.5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .buduar-home-block-header__bread-crumbs > *:last-child:before {
+    display: none; }
+
+.buduar-home-block-header__text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #50535b; }
+
+.buduar-home-block-header__link {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3f75ff; }
+
+.buduar-home-block__text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #50535b;
+  margin-bottom: 14px; }
+
+.buduar-home-block__img {
+  widows: 100%;
+  padding-top: 58%;
+  border-radius: 5px;
+  background-color: #edf1f8;
+  margin-bottom: 14px; }
+
+.buduar-home-suggestions {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 23%;
+  flex: 0 0 23%;
+  padding: 40px 0px; }
+
+.buduar-home-suggestions__body {
+  background: white;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 25px; }
+
+.buduar-home-suggestions__input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 12px; }
+  .buduar-home-suggestions__input input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #adb2c2;
+    padding: 0 15px;
+    padding-right: 35px;
+    padding-bottom: 1.5px;
+    border-radius: 5px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #b0b2bb; }
+
+.buduar-home-suggestions__input_icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #b0b2bb; }
+
+.buduar-home-suggestions-title {
+  margin: 0 -25px;
+  padding: 12px 25px;
+  border-bottom: 1px solid #dddfff;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-suggestions-title__text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #22252b; }
+
+.buduar-home-suggestions-title__icons {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.buduar-home-suggestions-title__icon {
+  font-size: 16px;
+  color: #b0b2bb;
+  margin-left: 8px; }
