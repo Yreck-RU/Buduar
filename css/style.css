@@ -771,6 +771,56 @@ input[type="checkbox"]:checked + label:after,
 input[type="radio"]:checked + label:after {
   opacity: 1; }
 
+.header-active {
+  padding: 12px 0;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  position: relative;
+  z-index: 10; }
+
+.header-active__body {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.index-block-content__logo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 118px;
+  flex: 0 0 118px;
+  height: 33px;
+  width: 118px; }
+
+.header-active__content {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.index-block-eng_black .index-block-eng__header {
+  padding-top: 0;
+  color: #22252b; }
+
+.index-block-eng_black .index-block-eng__header span {
+  color: #b0b2bb; }
+
+.header-active__img {
+  background-color: #edf1f8;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 17px; }
+
 .benefits {
   padding-top: 120px;
   padding-bottom: 60px; }
@@ -1441,16 +1491,13 @@ input[type="radio"]:checked + label:after {
   align-items: center;
   padding: 10px 20px 12px;
   border-radius: 15px 0 0 15px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 1.5px; }
   .buduar-home-panel__item._active {
-    background: #EDF1F8; }
-  .buduar-home-panel__item._active .buduar-home-panel__icon {
-    background: -webkit-gradient(linear, left top, right top, color-stop(0.01%, #703FEC), color-stop(100.01%, #00B9E4));
-    background: -webkit-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
-    background: -o-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
-    background: linear-gradient(90deg, #703FEC 0.01%, #00B9E4 100.01%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    background: #EDF1F8;
+    pointer-events: none; }
+  .buduar-home-panel__item._active .buduar-home-panel__icon img:last-child {
+    opacity: 1; }
   .buduar-home-panel__item._active:before {
     content: "";
     display: block;
@@ -1463,11 +1510,38 @@ input[type="radio"]:checked + label:after {
     background: -webkit-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
     background: -o-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
     background: linear-gradient(90deg, #703FEC 0.01%, #00B9E4 100.01%); }
+  @media (min-width: 1064px) {
+    .buduar-home-panel__item {
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .buduar-home-panel__item:hover {
+      background: rgba(237, 241, 248, 0.3); }
+    .buduar-home-panel__item:hover img:last-child {
+      opacity: 0.8; }
+    .buduar-home-panel__item:active {
+      background: rgba(237, 241, 248, 0.4);
+      opacity: 0.8; } }
 
 .buduar-home-panel__icon {
-  font-size: 17px;
-  color: #B0B2BB;
+  width: 19px;
+  height: 19px;
+  position: relative;
   margin-right: 6px; }
+  .buduar-home-panel__icon img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .buduar-home-panel__icon img:last-child {
+    opacity: 0;
+    pointer-events: none; }
 
 .buduar-home-panel__text {
   font-family: Inter;
@@ -1476,8 +1550,7 @@ input[type="radio"]:checked + label:after {
   line-height: 100%;
   letter-spacing: 0em;
   text-align: left;
-  color: #50535B;
-  padding-top: 2px; }
+  color: #50535B; }
 
 .buduar-home-body {
   -webkit-box-flex: 1;
@@ -1633,9 +1706,13 @@ input[type="radio"]:checked + label:after {
 .buduar-home-block-header__logo {
   height: 40px;
   width: 40px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40px;
+  flex: 0 0 40px;
   margin-right: 8px;
   border-radius: 50%;
-  background-color: #edf1f8; }
+  background-color: #edf1f8;
+  border: 2px solid white; }
 
 .buduar-home-block-header__title {
   font-family: Inter;
@@ -1653,7 +1730,9 @@ input[type="radio"]:checked + label:after {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .buduar-home-block-header__bread-crumbs > * {
     margin-right: 16px;
     position: relative; }
@@ -1710,8 +1789,8 @@ input[type="radio"]:checked + label:after {
 
 .buduar-home-suggestions {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 23%;
-  flex: 0 0 23%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
   padding: 40px 0px; }
   @media (max-width: 920px) {
     .buduar-home-suggestions {
@@ -1844,10 +1923,21 @@ input[type="radio"]:checked + label:after {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 70px;
   flex: 0 0 70px;
+  max-width: 70px;
   margin-right: 9px;
   background-color: #edf1f8;
   border-radius: 50%;
   overflow: hidden; }
+  @media (max-width: 1360px) {
+    .buduar-home-suggestions-block__img {
+      height: calc(30px + 40 * ((100vw - 320px) / 1040)); } }
+  @media (max-width: 1360px) {
+    .buduar-home-suggestions-block__img {
+      max-width: calc(30px + 40 * ((100vw - 320px) / 1040)); } }
+  @media (max-width: 680px) {
+    .buduar-home-suggestions-block__img {
+      height: 55px;
+      max-width: 55px; } }
 
 .buduar-home-suggestions-block__content {
   display: -webkit-box;
@@ -1861,6 +1951,12 @@ input[type="radio"]:checked + label:after {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 8px; }
+  @media (max-width: 1360px) {
+    .buduar-home-suggestions-block__content {
+      padding-bottom: calc(3px + 5 * ((100vw - 320px) / 1040)); } }
+  @media (max-width: 680px) {
+    .buduar-home-suggestions-block__content {
+      padding-bottom: 6px; } }
 
 .buduar-home-suggestions-block__title {
   font-family: Inter;
