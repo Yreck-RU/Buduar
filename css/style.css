@@ -201,10 +201,6 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-repeat: no-repeat; }
 
-@media (max-width: 1024px) {
-  body {
-    display: none; } }
-
 .index-block {
   background-image: url("../img/Index-block/fon.png");
   background-position: center;
@@ -1405,6 +1401,10 @@ input[type="radio"]:checked + label:after {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 920px) {
+    .buduar-home__wrapper {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .buduar-home-panel {
   -webkit-box-flex: 0;
@@ -1425,6 +1425,11 @@ input[type="radio"]:checked + label:after {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%); }
+  @media (max-width: 920px) {
+    .buduar-home-panel {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%; } }
 
 .buduar-home-panel__item {
   font-size: 0;
@@ -1479,6 +1484,19 @@ input[type="radio"]:checked + label:after {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 40px 30px; }
+  @media (max-width: 920px) {
+    .buduar-home-body {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+      flex: 0 0 65%;
+      padding: 20px;
+      padding-left: 0; } }
+  @media (max-width: 680px) {
+    .buduar-home-body {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      padding-right: 0; } }
 
 .buduar-home-new-post {
   background: #fff;
@@ -1695,6 +1713,18 @@ input[type="radio"]:checked + label:after {
   -ms-flex: 0 0 23%;
   flex: 0 0 23%;
   padding: 40px 0px; }
+  @media (max-width: 920px) {
+    .buduar-home-suggestions {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+      flex: 0 0 35%;
+      padding: 20px 0; } }
+  @media (max-width: 680px) {
+    .buduar-home-suggestions {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      padding-top: 0; } }
 
 .buduar-home-suggestions__body {
   background: white;
@@ -1769,3 +1799,83 @@ input[type="radio"]:checked + label:after {
   font-size: 16px;
   color: #b0b2bb;
   margin-left: 8px; }
+
+.buduar-home-suggestions-content__body {
+  padding: 15px 0; }
+
+.buduar-home-suggestions-block {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 14px 7px;
+  padding-top: 18px;
+  margin-bottom: 12px;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .buduar-home-suggestions-block:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%); }
+  .buduar-home-suggestions-block > * {
+    position: relative;
+    z-index: 3; }
+
+.buduar-home-suggestions-block__backgraund {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #edf1f8; }
+
+.buduar-home-suggestions-block__img {
+  height: 70px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70px;
+  flex: 0 0 70px;
+  margin-right: 9px;
+  background-color: #edf1f8;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.buduar-home-suggestions-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 8px; }
+
+.buduar-home-suggestions-block__title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white; }
+
+.buduar-home-suggestions-block__text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white; }
