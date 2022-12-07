@@ -44,7 +44,7 @@ var swiperTwo = new Swiper(".buduar-home-suggestions-content", {
 	//keyboard: true,
 	breakpoints: {
 		319.1: {
-			allowTouchMove: false,
+			allowTouchMove: true,
 			autoHeight: true,
 		},
 		767.1: {

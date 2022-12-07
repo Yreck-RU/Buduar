@@ -1689,7 +1689,8 @@ input[type="radio"]:checked + label:after {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 14px; }
+  margin-bottom: 14px;
+  position: relative; }
 
 .buduar-home-block-header__wrapper {
   font-size: 0;
@@ -1769,6 +1770,15 @@ input[type="radio"]:checked + label:after {
   letter-spacing: 0em;
   text-align: left;
   color: #3f75ff; }
+
+.buduar-home-block-header-dots {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.buduar-home-block-header-dots__header {
+  font-size: 4px;
+  color: #b0b2bb; }
 
 .buduar-home-block__text {
   font-family: Inter;
@@ -2046,3 +2056,84 @@ input[type="radio"]:checked + label:after {
   @media (max-width: 680px) {
     .buduar-home-suggestions-content__paginachion {
       padding: 0 8px; } }
+
+.like-wrapper {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.like-wrapper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 10px;
+  padding-right: 14px;
+  background: #edf1f8;
+  border-radius: 40px;
+  margin-right: 8px; }
+
+.like-wrapper__icon {
+  position: relative;
+  height: 13.5px;
+  width: 15px;
+  margin-right: 3.5px; }
+  .like-wrapper__icon img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 100%; }
+  .like-wrapper__icon img:last-child {
+    opacity: 0;
+    pointer-events: none; }
+
+.like-wrapper__text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #50535b; }
+
+.buduar-home-block-footer {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.buduar-home-block-footer__star {
+  font-size: 18px;
+  color: #b0b2bb; }
+
+.buduar-home-suggestions__list {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 14px; }
+
+.buduar-home-suggestions__link {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b0b2bb;
+  margin-right: 13px;
+  margin-bottom: 4px; }
