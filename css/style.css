@@ -1550,7 +1550,20 @@ input[type="radio"]:checked + label:after {
   line-height: 100%;
   letter-spacing: 0em;
   text-align: left;
-  color: #50535B; }
+  color: #50535B;
+  margin-right: 7px; }
+
+.buduar-home-panel__number {
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #50535B;
+  background: #EDF1F8;
+  border-radius: 40px;
+  padding: 2.5px 3px 2.8px; }
 
 .buduar-home-body {
   -webkit-box-flex: 1;
@@ -2514,3 +2527,38 @@ input[type="radio"]:checked + label:after {
         color: #205bf0; }
       .comments__button:active {
         opacity: 0.8; } }
+
+.component {
+  padding: 70px 0; }
+
+.radio-button_square label:after {
+  border-radius: 3px !important;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.01%, #703FEC), color-stop(100.01%, #00B9E4));
+  background: -webkit-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
+  background: -o-linear-gradient(left, #703FEC 0.01%, #00B9E4 100.01%);
+  background: linear-gradient(90deg, #703FEC 0.01%, #00B9E4 100.01%); }
+
+.radio-button_square label:before {
+  border-radius: 3px !important;
+  border: 1px solid #DDDFFF; }
+
+input[type="checkbox"]:checked + label > img,
+input[type="checkbox"]:not(:checked) + label > img {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+input[type="checkbox"]:checked + label > img,
+input[type="checkbox"]:not(:checked) + label > img {
+  left: 3px;
+  top: 4px;
+  width: 14px; }
+
+input[type="checkbox"]:not(:checked) + label > img {
+  opacity: 0; }
+
+input[type="checkbox"]:checked + label > img {
+  opacity: 1; }
